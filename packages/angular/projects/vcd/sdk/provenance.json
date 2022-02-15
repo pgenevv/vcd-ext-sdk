@@ -1,34 +1,47 @@
 {
-  "id": "http://vmware.com/schemas/software_provenance-0.2.0.json",
+  "id": "http://vmware.com/schemas/software_provenance-0.2.5.json",
   "root": "0.12.2-alpha.7",
-  "all-components": {
-    "name": "@vcd/sdk",
-    "version": "0.12.2-alpha.7",
-    "source_repositories": [
-      {
-        "content": "source",
-        "host": "github.com",
-        "protocol": "git",
-        "paths": [
-          "/vmware/vcd-ext-sdk/tree/main/packages/angular/projects/vcd/sdk"
-        ],
-        "branch": "main"
-      }
-    ],
-    "components": {},
-    "artifact_repositories": [
-      {
-        "content": "binary",
-        "protocol": "HTTPS",
-        "host": "registry.npmjs.org",
-        "path": "/@vcd/angular-client/-/angular-client-0.0.2-alpha.6.tgz"
-      },
-      {
-        "content": "binary",
-        "protocol": "HTTPS",
-        "host": "registry.npmjs.org",
-        "path": "/tslib/-/tslib-1.14.1.tgz"
-      }
-    ]
+  "tools": {
+    "https://github.com/": null
+  },
+  "all_components": {
+    "component": {
+      "typename": "comp.build.git",
+      "name": "@vcd/sdk",
+      "version": "0.12.2-alpha.7",
+      "source_repositories": [
+        {
+          "content": "source",
+          "host": "github.com",
+          "protocol": "git",
+          "paths": [
+            "/vmware/vcd-ext-sdk/tree/main/packages/angular/projects/vcd/sdk"
+          ],
+          "branch": "main"
+        }
+      ],
+      "components": [],
+      "artifact_repositories": [
+        {
+          "content": "binary",
+          "protocol": "HTTPS",
+          "host": "registry.npmjs.org",
+          "paths": [
+            "/@vcd/angular-client/-/angular-client-0.0.2-alpha.6.tgz"
+          ]
+        },
+        {
+          "content": "binary",
+          "protocol": "HTTPS",
+          "host": "registry.npmjs.org",
+          "paths": [
+            "/tslib/-/tslib-1.14.1.tgz"
+          ]
+        }
+      ],
+      "virtual_centers": [],
+      "target_repositories": [],
+      "all_ephemeral": "true"
+    }
   }
 }

@@ -1,40 +1,55 @@
 {
-  "id": "http://vmware.com/schemas/software_provenance-0.2.0.json",
+  "id": "http://vmware.com/schemas/software_provenance-0.2.5.json",
   "root": "0.0.5",
-  "all-components": {
-    "name": "vcd-ext-sdk-docs",
-    "version": "0.0.5",
-    "source_repositories": [
-      {
-        "content": "source",
-        "host": "github.com",
-        "protocol": "git",
-        "paths": [
-          "/vmware/vcd-ext-sdk/tree/main/docs"
-        ],
-        "branch": "main"
-      }
-    ],
-    "components": {},
-    "artifact_repositories": [
-      {
-        "content": "binary",
-        "protocol": "HTTPS",
-        "host": "registry.npmjs.org",
-        "path": "/@clr/icons/-/icons-4.0.9.tgz"
-      },
-      {
-        "content": "binary",
-        "protocol": "HTTPS",
-        "host": "registry.npmjs.org",
-        "path": "/@clr/ui/-/ui-4.0.9.tgz"
-      },
-      {
-        "content": "binary",
-        "protocol": "HTTPS",
-        "host": "registry.npmjs.org",
-        "path": "/@webcomponents/custom-elements/-/custom-elements-1.4.3.tgz"
-      }
-    ]
+  "tools": {
+    "https://github.com/": null
+  },
+  "all_components": {
+    "component": {
+      "typename": "comp.build.git",
+      "name": "vcd-ext-sdk-docs",
+      "version": "0.0.5",
+      "source_repositories": [
+        {
+          "content": "source",
+          "host": "github.com",
+          "protocol": "git",
+          "paths": [
+            "/vmware/vcd-ext-sdk/tree/main/docs"
+          ],
+          "branch": "main"
+        }
+      ],
+      "components": [],
+      "artifact_repositories": [
+        {
+          "content": "binary",
+          "protocol": "HTTPS",
+          "host": "registry.npmjs.org",
+          "paths": [
+            "/@clr/icons/-/icons-4.0.9.tgz"
+          ]
+        },
+        {
+          "content": "binary",
+          "protocol": "HTTPS",
+          "host": "registry.npmjs.org",
+          "paths": [
+            "/@clr/ui/-/ui-4.0.9.tgz"
+          ]
+        },
+        {
+          "content": "binary",
+          "protocol": "HTTPS",
+          "host": "registry.npmjs.org",
+          "paths": [
+            "/@webcomponents/custom-elements/-/custom-elements-1.4.3.tgz"
+          ]
+        }
+      ],
+      "virtual_centers": [],
+      "target_repositories": [],
+      "all_ephemeral": "true"
+    }
   }
 }
